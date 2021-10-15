@@ -5,6 +5,87 @@
     box-sizing: border-box;
 }
 
+/* COMMON */
 body {
     font-family: 'Open Sans',sans-serif;
+}
+
+.col {
+    float: left;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.container-header {
+    width: 98%;
+    margin: auto;
+}
+
+img {
+    width: 100%;
+}
+
+.btn {
+    display: inline-block;
+    font-size: 6px;
+    padding: 6px 12px;
+    line-height: normal;
+}
+
+.btn-blue {
+    background-color: #0061ff;
+    color: white;
+}
+
+/* END COMMON */
+header {
+    height: 70px;
+    background-color: lightgrey;
+}
+
+nav {
+    line-height: 70px;
+}
+
+.col.menu.left, .col.menu.right {
+    width: 50%;
+}
+
+.menu.left {
+    text-align: left;
+}
+
+.menu.right {
+    text-align: right;
+}
+
+.menu.left .logo {
+    width: 120px;
+    vertical-align: middle;
+}
+
+.menu ul {
+    list-style-type: none;
+}
+
+.menu ul li {
+    display: inline-block;
+}
+
+.menu.left ul li {
+    margin-right: 30px;
+}
+
+.menu.right ul li {
+    margin-left: 30px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
 }
