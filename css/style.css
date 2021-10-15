@@ -31,9 +31,14 @@ img {
 
 .btn {
     display: inline-block;
-    font-size: 6px;
-    padding: 6px 12px;
+    font-size: 12px;
+    padding: 8px 20px;
     line-height: normal;
+    vertical-align: middle;
+}
+
+.btn:hover {
+    opacity: 0.8;
 }
 
 .btn-blue {
@@ -42,9 +47,10 @@ img {
 }
 
 /* END COMMON */
+
+/* HEADER FIXED */
 header {
     height: 70px;
-    background-color: lightgrey;
 }
 
 nav {
@@ -84,8 +90,17 @@ nav {
     margin-left: 30px;
 }
 
-.menu ul li a {
+ul li a {
     text-decoration: none;
     color: black;
     font-size: 14px;
 }
+/* END HEADER FIXED */
+
+
+/* MAIN */
+main {
+    background-color: #b4d0e7;
+    height: 500px;
+}
+/* END MAIN */
