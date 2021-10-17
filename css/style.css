@@ -25,16 +25,39 @@ body {
     margin: auto;
 }
 
+.container-banner {
+    width: 85%;
+    margin: auto;
+}
+
+.container-section {
+    width: 65%;
+    margin: auto;
+}
+
+.container-subscription {
+    width: 85%;
+    margin: auto;
+}
+
 img {
     width: 100%;
 }
 
 .btn {
     display: inline-block;
-    font-size: 12px;
     padding: 8px 20px;
     line-height: normal;
     vertical-align: middle;
+    text-decoration: none;
+}
+
+.btn-small {
+    font-size: 12px;
+}
+
+.btn-large {
+    font-size: 14px;
 }
 
 .btn:hover {
@@ -46,11 +69,22 @@ img {
     color: white;
 }
 
+.btn-black {
+    border: 1px solid black;
+    color: black;
+}
+
 /* END COMMON */
 
 /* HEADER FIXED */
 header {
     height: 70px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    z-index: 1;
 }
 
 nav {
@@ -61,10 +95,13 @@ nav {
     width: 50%;
 }
 
+/* MENU LEFT */
 .menu.left {
     text-align: left;
 }
 
+
+/* MENU RIGHT */
 .menu.right {
     text-align: right;
 }
@@ -95,12 +132,376 @@ ul li a {
     color: black;
     font-size: 14px;
 }
+
+.menu-element:hover {
+    border-bottom: 3px solid black;
+}
 /* END HEADER FIXED */
 
 
 /* MAIN */
-main {
+/* BANNER */
+.banner {
     background-color: #b4d0e7;
-    height: 500px;
+    margin-top: 70px;
 }
+
+.container-banner {
+    padding: 80px 0;
+}
+
+.banner-title {
+    font-size: 36px;
+}
+
+/* BANNER TEXT CONTAINER */
+.banner-text {
+    width: 30%;
+}
+
+/* BANNER IMAGE CONTAINER */
+.banner-image {
+    width: 70%;
+}
+
+.col.banner-text, .col.banner-image {
+    margin-top: 30px;
+}
+
+.banner-button {
+    margin-top: 25px;
+}
+
+.banner-cancel {
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+.banner-down-arrow {
+    margin-top: 30px;
+    font-size: 40px;
+}
+
+/* BANNER IMAGE */
+.banner-photo {
+    position: relative;
+}
+
+.banner-photo img {
+    position: absolute;
+    top: 0;
+    left: 45px;
+    width: 90%;
+}
+/* END BANNER */
+
+
+
+/* SUBSCRIPTION SECTION */
+.subscription-plan {
+    margin-top: 200px;
+    margin-bottom: 40px;
+}
+
+.subscription-plan-title {
+    font-size: 24px;
+}
+
+.subscription-plan-billing {
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.radiobutton {
+    padding-right: 20px;
+    font-size: 14px;
+}
+
+input[type="radio"] { 
+    transform: scale(1.5);
+    vertical-align: middle; 
+}
+
+.subscription-plan-column-container {
+    margin-top: 40px;
+}
+
+.column-subscription {
+    width: 30%;
+    border: 1px solid lightgrey;
+}
+
+.column-subscription.standard {
+    margin: 0 5%;
+}
+
+.user-title {
+    padding: 8px 0;
+    text-align: center;
+    border-bottom: 1px solid lightgrey;
+}
+
+.subscription-user {
+    font-size: 14px;
+}
+
+.column-subscription-content {
+    width: 100%;
+}
+
+.main-subscription, .details-subscription {
+    margin: 40px 0;
+}
+
+.subscription-name {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.subscription-price {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.subscription-charge {
+    font-size: 13px;
+    color: #707e8b;
+    margin-top: 8px;
+}
+
+.details-subscription div {
+    margin: 20px 0;
+}
+
+.font-13 {
+    font-size: 13px;
+}
+
+.subscription-try {
+    text-align: center;
+}
+
+.subscription-buy {
+    margin: 20px 0;
+}
+
+.buy-now {
+    color: #2275ff;
+}
+
+.advantages-subscription {
+    margin-top: 80px;
+    margin-bottom: 200px;
+}
+
+.advantages-title {
+    font-size: 14px;
+}
+
+.advantages-list ul {
+    list-style-type: none;
+}
+
+.advantages-list ul li {
+    margin: 25px 0;
+}
+
+.checkmark {
+    color: #0765ff;
+}
+
+/* END SUBSCRIPTION SECTION */
+
+
+
+/* ENTERPRISE SECTION */
+.enterprise-container {
+    border: 1px solid lightgrey;
+    margin-bottom: 40px;
+}
+
+.column-enterprise-text {
+    width: 70%;
+    margin: 30px 0;
+}
+
+.column-enterprise-button {
+    width: 30%;
+}
+
+.enterprise-content-container {
+    width: 95%;
+    margin: auto;
+}
+
+.enterprise-title {
+    font-size: 20px;
+}
+
+.enterprise-contact {
+    font-weight: bold;
+    font-size: 14px;
+    margin-top: 15px;
+    margin-bottom: 35px;
+}
+
+.column-enterprise-button {
+    margin: 30px 0;
+}
+/* END ENTERPRISE SECTION */
+
+
+
+/* PARTNER SECTION */
+.column-partner-image {
+    width: 55%;
+}
+
+.column-partner-text {
+    margin-top: 30px;
+    width: 45%;
+    padding-left: 40px;
+}
+
+.partner-title {
+    font-size: 20px;
+}
+
+.partner-paragraph {
+    font-size: 14px;
+    margin-top: 30px;
+    line-height: 25px;
+}
+
+.partner-button {
+    margin-top: 25px;
+}
+/* END PARTNER SECTION */
+
+
+/* BUSINESS OPERATIONS SECTION */
+.business-operations {
+    margin-top: 80px;
+}
+
+.business-operations-title {
+    font-size: 24px;
+}
+
+.business-operations-row {
+    width: 100%;
+}
+
+.column-business-operations {
+    width: 30%;
+    margin: 40px 0;
+}
+
+.column-business-operations.middle {
+    margin: 40px 5%;
+}
+.business-operations-subtitle {
+    font-size: 20px;
+}
+
+.business-operations-paragraph {
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+.dropbox-paper {
+    text-decoration: underline;
+}
+/* END BUSINESS OPERATIONS SECTION */
+
+
+
+/* BUSINESS TEAM SECTION */
+.business-team {
+    margin-top: 140px;
+}
+
+.business-team-title {
+    font-size: 24px;
+    margin-bottom: 25px;
+}
+
+.business-team-find-more a {
+    font-size: 14px;
+    color: #0c67ff;
+}
+
+.business-team-main-column-container {
+    height: 450px;
+    margin-top: 40px;
+
+    /* test */
+    margin-bottom: 40px;
+}
+
+.column-business-team-logo-container {
+    width: 30%;
+}
+
+.column-business-team-text {
+    height: 100%;
+    width: 40%;
+    background-color: #f5f5f5;
+}
+
+.team-name {
+    position: relative;
+    width: 50%;
+    height: 100%;
+}
+
+.team-name-row {
+    width: 100%;
+    height: 225px;
+}
+
+.designit {
+    background-color: #a2d39b;
+}
+
+.asu {
+    background-color: #61082b;
+}
+
+.uf {
+    background-color: #0093ce;
+}
+
+.topps {
+    background-color: #ff1c1c;
+}
+
+.wbr {
+    background-color: #d5001f;
+}
+
+.hearst {
+    background-color: #b4d0e7;
+}
+
+.lonely {
+    background-color: #0d2481;
+}
+
+.clear-channel {
+    background-color: #ffd830;
+}
+
+.team-name-logo {
+    width: 120px;
+    filter: invert(1);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+/* END BUSINESS TEAM SECTION */
+
+
+
 /* END MAIN */
