@@ -40,6 +40,11 @@ body {
     margin: auto;
 }
 
+.container-business-team {
+    width: 90%;
+    margin: auto;
+}
+
 img {
     width: 100%;
 }
@@ -455,6 +460,9 @@ input[type="radio"] {
     height: 100%;
 }
 
+.team-name.designit {
+    border: 10px solid #d0e9cd;
+}
 .team-name-row {
     width: 100%;
     height: 225px;
@@ -499,6 +507,21 @@ input[type="radio"] {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.column-business-team-text {
+    padding: 40px 10px;
+}
+.column-business-team-text-logo {
+    width: 120px;
+
+    /* test */
+    margin-bottom: 100px;
+}
+
+.column-business-team-text-paragraph, .column-business-team-text-author {
+    font-size: 14px;
+    margin-top: 40px;
 }
 /* END BUSINESS TEAM SECTION */
 
