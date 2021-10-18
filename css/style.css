@@ -81,6 +81,12 @@ img {
     color: black;
 }
 
+.btn-white {
+    background-color: #ffffff;
+    color: black;
+    width: 100%;
+    text-align: center;
+}
 /* END COMMON */
 
 /* HEADER FIXED */
@@ -445,10 +451,7 @@ input[type="radio"] {
 
 .business-team-main-column-container {
     height: 450px;
-    margin-top: 40px;
-
-    /* test */
-    margin-bottom: 40px;
+    margin-top: 40px;    
 }
 
 .column-business-team-logo-container {
@@ -533,5 +536,23 @@ input[type="radio"] {
 /* END BUSINESS TEAM SECTION */
 
 
+/* BRING DROPBOX SECTION */
+.dropbox-business-try {
+    background-color: #b4d0e7;
+    padding: 100px 0;
+}
+
+.column-dropbox-business-try.title {
+    font-size: 24px;
+    color: #610829;
+    text-align: left;
+    width: 70%;
+}
+
+.column-dropbox-business-try.button {
+    text-align: right;
+    width: 30%;
+}
+/* END BRING DROPBOX SECTION */
 
 /* END MAIN */
