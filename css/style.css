@@ -555,4 +555,35 @@ input[type="radio"] {
 }
 /* END BRING DROPBOX SECTION */
 
+
+/* QUESTION SECTION */
+.questions {
+    margin: 100px 0;
+}
+
+.questions-title {
+    font-size: 24px;
+    margin-bottom: 50px;
+}
+
+.question-row {
+    width: 100%;
+    border-top: 1px solid lightgrey;
+    border-bottom: 1px solid lightgrey;
+    padding: 30px 0;
+}
+
+.column-question {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.column-question.request {
+    width: 95%;
+}
+
+.column-question.answer {
+    width: 5%;
+}
+/* END QUESTION SECTION */
 /* END MAIN */
