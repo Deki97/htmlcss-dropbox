@@ -587,3 +587,46 @@ input[type="radio"] {
 }
 /* END QUESTION SECTION */
 /* END MAIN */
+
+
+/* FOOTER */
+footer {
+    background-color: black;
+    color: white;
+}
+
+.column-footer-title {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+footer ul {
+    list-style-type: none;
+    line-height: 25px;
+}
+
+footer ul li a {
+    font-size: 13px;
+    color: white;
+}
+
+.column-footer-links {
+    width: calc(100% / 5);
+    padding: 20px 0;
+}
+
+.split-border-footer {
+    border-bottom: 1px solid grey;
+    width: 100px; 
+}
+
+.language-footer {
+    color: grey;
+    font-size: 12px;
+    margin-top: 40px;
+}
+
+.down-arrow {
+    vertical-align: middle;
+}
+/* END FOOTER */
