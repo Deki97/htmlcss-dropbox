@@ -87,7 +87,32 @@ img {
     width: 100%;
     text-align: center;
 }
+
+.font-13 {
+    font-size: 13px;
+}
+
+.font-14 {
+    font-size: 14px;
+}
+
+.font-20 {
+    font-size: 20px;
+}
+
+.font-24 {
+    font-size: 24px;
+}
+
+.w-30 {
+    width: 30%;
+}
+
+.w-70 {
+    width: 70%;
+}
 /* END COMMON */
+
 
 /* HEADER FIXED */
 header {
@@ -128,6 +153,7 @@ nav {
     list-style-type: none;
 }
 
+/* MENU ELEMENTS */
 .menu ul li {
     display: inline-block;
 }
@@ -140,7 +166,9 @@ nav {
     margin-left: 30px;
 }
 
-ul li a {
+nav ul li a {
+    line-height: 62px;
+    display: inline-block;
     text-decoration: none;
     color: black;
     font-size: 14px;
@@ -216,10 +244,6 @@ ul li a {
     margin-bottom: 40px;
 }
 
-.subscription-plan-title {
-    font-size: 24px;
-}
-
 .subscription-plan-billing {
     margin-top: 40px;
     margin-bottom: 20px;
@@ -235,14 +259,16 @@ input[type="radio"] {
     vertical-align: middle; 
 }
 
+/* CONTENITORE ABBONAMENTI */
 .subscription-plan-column-container {
     margin-top: 40px;
 }
 
+/* SINGOLA COLONNA ABBONAMENTI */
 .column-subscription {
     width: 30%;
     border: 1px solid lightgrey;
-    height: 950px;
+    min-height: 900px;
 }
 
 .column-subscription.standard {
@@ -253,10 +279,6 @@ input[type="radio"] {
     padding: 8px 0;
     text-align: center;
     border-bottom: 1px solid lightgrey;
-}
-
-.subscription-user {
-    font-size: 14px;
 }
 
 .column-subscription-content {
@@ -273,7 +295,6 @@ input[type="radio"] {
 }
 
 .subscription-price {
-    font-size: 14px;
     font-weight: bold;
 }
 
@@ -287,8 +308,12 @@ input[type="radio"] {
     margin: 20px 0;
 }
 
-.font-13 {
-    font-size: 13px;
+.subscription-text {
+    padding-left: 20px;
+}
+
+.subscription-icon {
+    margin-left: -16px;
 }
 
 .subscription-try {
@@ -308,12 +333,9 @@ input[type="radio"] {
     width: 40px;
 }
 
+/* VANTAGGI SOTTOSCRIZIONE */
 .advantages-subscription {
-    margin-top: 30px;   
-}
-
-.advantages-title {
-    font-size: 14px;
+    margin-top: 30px;  
 }
 
 .advantages-list ul {
@@ -322,11 +344,14 @@ input[type="radio"] {
 
 .advantages-list ul li {
     margin: 25px 0;
+    padding-left: 20px;
 }
 
 .checkmark {
     color: #0765ff;
+    margin-left: -16px;
 }
+/* END VANTAGGI SOTTOSCRIZIONE */
 
 /* END SUBSCRIPTION SECTION */
 
@@ -339,12 +364,7 @@ input[type="radio"] {
 }
 
 .column-enterprise-text {
-    width: 70%;
     margin: 30px 0;
-}
-
-.column-enterprise-button {
-    width: 30%;
 }
 
 .enterprise-content-container {
@@ -352,13 +372,8 @@ input[type="radio"] {
     margin: auto;
 }
 
-.enterprise-title {
-    font-size: 20px;
-}
-
 .enterprise-contact {
     font-weight: bold;
-    font-size: 14px;
     margin-top: 15px;
     margin-bottom: 35px;
 }
@@ -381,12 +396,7 @@ input[type="radio"] {
     padding-left: 40px;
 }
 
-.partner-title {
-    font-size: 20px;
-}
-
 .partner-paragraph {
-    font-size: 14px;
     margin-top: 30px;
     line-height: 25px;
 }
@@ -400,10 +410,6 @@ input[type="radio"] {
 /* BUSINESS OPERATIONS SECTION */
 .business-operations {
     margin-top: 80px;
-}
-
-.business-operations-title {
-    font-size: 24px;
 }
 
 .business-operations-row {
@@ -440,7 +446,6 @@ input[type="radio"] {
 }
 
 .business-team-title {
-    font-size: 24px;
     margin-bottom: 25px;
 }
 
@@ -450,17 +455,18 @@ input[type="radio"] {
 }
 
 .business-team-main-column-container {
-    height: 450px;
     margin-top: 40px;    
 }
 
 .column-business-team-logo-container {
-    width: 30%;
+    width: 450px;
+    height: 450px;
 }
 
+/* COLONNA CENTRALE BUSINESS TEAM SECTION */
 .column-business-team-text {
-    height: 100%;
-    width: 40%;
+    height: 450px;
+    width: calc(100% - 900px);
     background-color: #f5f5f5;
 }
 
@@ -475,10 +481,11 @@ input[type="radio"] {
 }
 
 .team-name-row {
-    width: 100%;
+    width: 450px;
     height: 225px;
 }
 
+/* SFONDO PER OGNI BLOCCO */
 .designit {
     background-color: #a2d39b;
 }
@@ -510,9 +517,11 @@ input[type="radio"] {
 .clear-channel {
     background-color: #ffd830;
 }
+/* END SFONDO PER OGNI BLOCCO */
 
+/* CENTRATURA VERTICALE E ORIZZONTALE DEL LOGO */
 .team-name-logo {
-    width: 120px;
+    width: 50%;
     filter: invert(1);
     position: absolute;
     top: 50%;
@@ -562,7 +571,6 @@ input[type="radio"] {
 }
 
 .questions-title {
-    font-size: 24px;
     margin-bottom: 50px;
 }
 
@@ -608,6 +616,7 @@ footer ul {
 footer ul li a {
     font-size: 13px;
     color: white;
+    text-decoration: none;
 }
 
 .column-footer-links {
@@ -630,3 +639,4 @@ footer ul li a {
     vertical-align: middle;
 }
 /* END FOOTER */
+
